@@ -1,0 +1,17 @@
+{
+  "name": "rentx-api",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Matheus Lucas <matheus.lms@icloud.com>",
+  "license": "MIT",
+
+  "scripts": {
+    "dev:server": "tsnd -r tsconfig-paths/register ./src/shared/infra/http"
+  },
+
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.3.5"
+  }
+}
