@@ -28,6 +28,12 @@ rules:
   class-methods-use-this: 'off'
   import/prefer-default-export: 'off'
 
+  no-unused-vars: 0
+  '@typescript-eslint/no-unused-vars':
+    - warn
+    - argsIgnorePattern: "_"
+      varsIgnorePattern: "_"
+
   '@typescript-eslint/naming-convention':
     - error
     -
@@ -43,12 +49,14 @@ rules:
       newlinesBetween: always
       groups:
         - module
-        - /^@configs/
-        - /^@shared/
-        - /^@modules/
-        - parent
-        - sibling
-        - index
+        - /entity/
+        - /repository/
+        - /useCases/
+        - /error/
+        - /providers/
+        - - parent
+          - sibling
+          - index
       alphabetize:
         order: asc
         ignoreCase: true

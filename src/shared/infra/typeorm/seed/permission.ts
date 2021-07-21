@@ -8,7 +8,7 @@ import yargs from 'yargs/yargs';
 async function create(name: string, description: string) {
   const connection = await createConnection();
 
-  connection.query(`
+  await connection.query(`
     INSERT INTO permissions
     (name, description)
     VALUES

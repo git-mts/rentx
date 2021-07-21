@@ -5,6 +5,7 @@
     // "lib": [],
     "outDir": "./dist",
     // "rootDir": "./",
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
     "removeComments": true,
     "strict": true,
     "baseUrl": "./src",
